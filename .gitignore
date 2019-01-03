@@ -3,3 +3,7 @@
 *.pkl
 lib/models/*.pyc
 lib/utils/*.pyc
+
+\.idea/
+
+*.pyc
