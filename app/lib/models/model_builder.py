@@ -17,8 +17,8 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from models import c3d_model
-from models import r3d_model
+from lib.models import c3d_model
+from lib.models import r3d_model
 from caffe2.python import core, brew
 
 import logging

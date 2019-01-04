@@ -18,9 +18,9 @@ from __future__ import unicode_literals
 from __future__ import print_function
 
 from caffe2.python import workspace, cnn, core, data_parallel_model
-import models.model_builder as model_builder
-import utils.model_helper as model_helper
-import utils.model_loader as model_loader
+import lib.models.model_builder as model_builder
+import lib.utils.model_helper as model_helper
+import lib.utils.model_loader as model_loader
 
 import numpy as np
 import logging

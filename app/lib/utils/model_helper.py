@@ -83,9 +83,9 @@ def GetFlopsAndParams(model, gpu_id=0):
 
 
 def LoadModel(path, dbtype='log_file_db'):
-    '''
+    """
     Load pretrained model from file
-    '''
+    """
     log.info("Loading path: {}".format(path))
     meta_net_def = pred_exp.load_from_db(path, dbtype)
     init_net = core.Net(pred_utils.GetNet(
@@ -117,19 +117,9 @@ def AddVideoInput(model, reader, **kwargs):
         log.info('unknown input_type option')
 
     if get_video_id:
-        data, label, video_id = model.net.VideoInput(
-            reader,
-            ["data", "label", "video_id"],
-            name="data",
-            **kwargs
-        )
+        data, label, video_id = model.net.VideoInput(reader, ["data", "label", "video_id"], name="data", **kwargs)
     else:
-        data, label = model.net.VideoInput(
-            reader,
-            ["data", "label"],
-            name="data",
-            **kwargs
-        )
+        data, label = model.net.VideoInput(reader, ["data", "label"], name="data", **kwargs)
 
     data = model.StopGradient(data, data)
 

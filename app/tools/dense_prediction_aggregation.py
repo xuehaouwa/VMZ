@@ -21,9 +21,9 @@ import logging
 import numpy as np
 import os
 import argparse
-import cPickle as pickle
+import _pickle as pickle
 
-import utils.metric as metric
+import lib.utils.metric as metric
 
 logging.basicConfig()
 log = logging.getLogger("dense_prediction_aggregation")

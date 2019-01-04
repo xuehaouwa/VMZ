@@ -16,7 +16,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from models.video_model import VideoModelBuilder
+from lib.models.video_model import VideoModelBuilder
 
 # For more depths, add the block config here
 BLOCK_CONFIG = {

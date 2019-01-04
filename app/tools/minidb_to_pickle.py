@@ -24,7 +24,7 @@ from caffe2.python.predictor_constants import predictor_constants
 
 import argparse
 import logging
-import cPickle as pickle
+import _pickle as pickle
 logging.basicConfig()
 log = logging.getLogger("minidb_to_pickle")
 log.setLevel(logging.INFO)

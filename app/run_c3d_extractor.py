@@ -5,7 +5,7 @@ from data.create_csv import create_csv
 
 if __name__ == "__main__":
     resource_manager = ResourceManager("resource")
-    resource_manager.read_manifest("app", "resource_manifest.json")
+    resource_manager.read_manifest(os.getcwd(), "resource_manifest.json")
     resource_manager.load_all_resources()
 
     test_video_path = os.path.join("resource", "iga_test.mp4")

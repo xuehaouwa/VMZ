@@ -13,5 +13,3 @@ RUN pip install lmdb
 
 ADD app /app
 
-CMD ["python", "run_c3d_extractor.py"]
-CMD ["python", "data/create_video_db.py", "--list_file=resource/list.csv", "--output_file=test_lmdb_data", "--use_list=1", "--use_video_id=1", "--use_start_frame=1"]
